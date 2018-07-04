@@ -56,6 +56,11 @@ app.get('/bad', (req, res) => {
 });
 
 
+app.get('/login', (req, res) => {
+    res.render('connexion.hbs',{ login: 'Yohan' });
+});
+
+
 
 app.listen(port, () => {
     console.log(` server is up on ${port} port`);

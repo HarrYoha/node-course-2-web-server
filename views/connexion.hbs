@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+        <title>Connexion {{login}} </title>
+		<meta charset="utf-8"/>
+	</head>
+
+		<header>
+            <div id="logo"><img src="logo.png" alt="logo" width=50>   </div>
+           
+        </header>
+<body>
+	<div id="connexion_main">
+	<h1>Twister</h1>
+	<h2>Se connecter {{login}} </h2>
+	<form action="javascript:function(){return;}" method="POST">
+
+	<div class="ids" ><span>Login</span>
+	<input type="text" id="login"/>
+	</div> 
+
+	<div class="ids"><span>Password</span>
+	<input type="password" id="password"/>
+	</div> 
+	
+	<div class="buttons"> 
+	<input type="submit" value="connexion" onclick="connexion(this)" />
+	</div>
+
+	<div class="links">
+		<input type="button" onclick="makeInscriptionPanel()" value="Pas encore inscrit ?"> 
+		<input type="button" onclick="" value="Mot de passe oublié ?"> 
+	</div>
+
+</form>
+</div>
+
+<div id="div_error"></div>
+
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/inscription.js"></script>
+<script src="js/connexion.js"></script>
+</body>
+</html>
